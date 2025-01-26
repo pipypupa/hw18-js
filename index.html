@@ -4,6 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      /* Мінімальне оформлення галереї */
+      .gallery {
+        display: flex;
+        gap: 15px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+      }
+      .gallery-item {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+      }
+      .gallery-item img {
+        display: block;
+        width: 100%;
+      }
+    </style>
   </head>
 
   <body>
@@ -41,6 +60,15 @@
     <!-- Завдання 2 -->
     <ul id="ingredients"></ul>
 
+    <!-- Завдання 3 -->
+    <ul id="gallery" class="gallery"></ul>
+
+    <!-- Завдання 4 -->
+    <div id="counter">
+      <button type="button" data-action="decrement">-1</button>
+      <span id="value">0</span>
+      <button type="button" data-action="increment">+1</button>
+     </div>
     <script src="./script.js"></script>
   </body>
 </html>
